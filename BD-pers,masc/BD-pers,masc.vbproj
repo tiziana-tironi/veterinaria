@@ -104,24 +104,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\ClassPet.vb" />
     <Compile Include="Entidades\Person.vb" />
-    <Compile Include="Entidades\Pet.vb" />
     <Compile Include="Logica\LMascota.vb" />
-    <Compile Include="Logica\LPersona.vb" />
+    <Compile Include="Logica\LogicaPersona.vb" />
+    <Compile Include="Persistencia\PTelefono.vb" />
     <Compile Include="Persistencia\Conexion.vb" />
     <Compile Include="Persistencia\PMascota.vb" />
     <Compile Include="Persistencia\PPersona.vb" />
-    <Compile Include="Persona.vb">
+    <Compile Include="AltaPersonaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persona.Designer.vb">
-      <DependentUpon>Persona.vb</DependentUpon>
+    <Compile Include="AltaPersonaForm.Designer.vb">
+      <DependentUpon>AltaPersonaForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mascota.Designer.vb">
-      <DependentUpon>Mascota.vb</DependentUpon>
+    <Compile Include="AltaMascotaForm.Designer.vb">
+      <DependentUpon>AltaMascotaForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Mascota.vb">
+    <Compile Include="AltaMascotaForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="inicio.Designer.vb">
@@ -145,13 +146,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PersonSearch.Designer.vb">
+      <DependentUpon>PersonSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Persona.resx">
-      <DependentUpon>Persona.vb</DependentUpon>
+    <EmbeddedResource Include="AltaPersonaForm.resx">
+      <DependentUpon>AltaPersonaForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mascota.resx">
-      <DependentUpon>Mascota.vb</DependentUpon>
+    <EmbeddedResource Include="AltaMascotaForm.resx">
+      <DependentUpon>AltaMascotaForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.vb</DependentUpon>
@@ -161,6 +168,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonSearch.resx">
+      <DependentUpon>PersonSearch.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

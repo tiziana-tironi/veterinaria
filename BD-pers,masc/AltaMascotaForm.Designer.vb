@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Mascota
+Partial Class PetClass
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -144,7 +144,7 @@ Partial Class Mascota
         '
         Me.LblMostrar.AutoSize = True
         Me.LblMostrar.ForeColor = System.Drawing.Color.Black
-        Me.LblMostrar.Location = New System.Drawing.Point(608, 177)
+        Me.LblMostrar.Location = New System.Drawing.Point(606, 177)
         Me.LblMostrar.Name = "LblMostrar"
         Me.LblMostrar.Size = New System.Drawing.Size(39, 13)
         Me.LblMostrar.TabIndex = 13

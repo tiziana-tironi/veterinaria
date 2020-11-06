@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Persona
+Partial Class AltaPersonaForm
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -36,6 +36,7 @@ Partial Class Persona
         Me.LblMostrar = New System.Windows.Forms.Label()
         Me.btntelefono = New System.Windows.Forms.Button()
         Me.lv_telefono = New System.Windows.Forms.ListView()
+        Me.ButtonModificar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblPerson
@@ -134,7 +135,7 @@ Partial Class Persona
         'BtnCan
         '
         Me.BtnCan.ForeColor = System.Drawing.Color.Black
-        Me.BtnCan.Location = New System.Drawing.Point(484, 391)
+        Me.BtnCan.Location = New System.Drawing.Point(412, 391)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(87, 29)
         Me.BtnCan.TabIndex = 10
@@ -170,11 +171,22 @@ Partial Class Persona
         Me.lv_telefono.UseCompatibleStateImageBehavior = False
         Me.lv_telefono.View = System.Windows.Forms.View.List
         '
-        'Persona
+        'ButtonModificar
+        '
+        Me.ButtonModificar.ForeColor = System.Drawing.Color.Black
+        Me.ButtonModificar.Location = New System.Drawing.Point(557, 391)
+        Me.ButtonModificar.Name = "ButtonModificar"
+        Me.ButtonModificar.Size = New System.Drawing.Size(87, 29)
+        Me.ButtonModificar.TabIndex = 14
+        Me.ButtonModificar.Text = "Modificar"
+        Me.ButtonModificar.UseVisualStyleBackColor = True
+        '
+        'AltaPersonaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonModificar)
         Me.Controls.Add(Me.lv_telefono)
         Me.Controls.Add(Me.btntelefono)
         Me.Controls.Add(Me.LblMostrar)
@@ -190,7 +202,7 @@ Partial Class Persona
         Me.Controls.Add(Me.LblCedu)
         Me.Controls.Add(Me.LblPerson)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Name = "Persona"
+        Me.Name = "AltaPersonaForm"
         Me.Text = "Persona"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -211,4 +223,5 @@ Partial Class Persona
     Friend WithEvents LblMostrar As Label
     Friend WithEvents btntelefono As Button
     Friend WithEvents lv_telefono As ListView
+    Friend WithEvents ButtonModificar As Button
 End Class

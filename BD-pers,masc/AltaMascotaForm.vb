@@ -1,4 +1,4 @@
-﻿Public Class Mascota
+﻿Public Class PetClass
     Private Sub BtnGuarM_Click(sender As Object, e As EventArgs) Handles BtnGuarM.Click
         Dim Id As Integer
         Dim name As String
@@ -16,6 +16,10 @@
         LblMostrar.Text = resu
 
 
+
+    End Sub
+
+    Private Sub LblMascot_Click(sender As Object, e As EventArgs) Handles LblMascot.Click
 
     End Sub
 End Class
