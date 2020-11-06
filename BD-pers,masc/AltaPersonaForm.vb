@@ -5,7 +5,6 @@
         Try
             Dim ceduP As Integer
             Dim nameP As String
-            Dim tel As Integer
             Dim dir As String
 
             ceduP = TxtbCedu.Text

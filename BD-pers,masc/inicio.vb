@@ -10,4 +10,8 @@
     Private Sub BuscarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles BuscarToolStripMenuItem1.Click
         PersonSearch.ShowDialog()
     End Sub
+
+    Private Sub AltaYModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AltaYModificarToolStripMenuItem.Click
+        AltaPersonaForm.Show()
+    End Sub
 End Class
