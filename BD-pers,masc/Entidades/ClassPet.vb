@@ -1,43 +1,43 @@
 ﻿Public Class ClassPet
-    Private _name As String
-    Private _dateOfBirthday As Integer
-    Private _owner As Person
-    Private _id As Integer
+    Private _idPet As Integer
+    Private _namePet As String
+    Private _dateOfBirthdayPet As Integer
+    Private _ciPet As Integer
 
 
-    Public Property Name As String
+    Public Property NamePet As String
         Get
-            Return _name
+            Return _namePet
         End Get
         Set(value As String)
-            _name = value
+            _namePet = value
         End Set
     End Property
 
-    Public Property dateOfBirthday As Integer
+    Public Property DateOfBirthdayPet As Integer
         Get
-            Return _dateOfBirthday
+            Return _dateOfBirthdayPet
         End Get
         Set(value As Integer)
-            _dateOfBirthday = value
+            _dateOfBirthdayPet = value
         End Set
     End Property
 
-    Public Property Id As Integer
-            Get
-                Return _id
-            End Get
-            Set(value As Integer)
-                _id = value
-            End Set
-        End Property
-
-    Public Property Owner As Person
+    Public Property IdPet As Integer
         Get
-            Return _owner
+            Return _idPet
         End Get
-        Set(value As Person)
-            _owner = value
+        Set(value As Integer)
+            _idPet = value
+        End Set
+    End Property
+
+    Public Property CiPet As Integer
+        Get
+            Return _ciPet
+        End Get
+        Set(value As Integer)
+            _ciPet = value
         End Set
     End Property
 
@@ -45,11 +45,11 @@
 
         End Sub
 
-    Public Sub PetClass(owner_ As Person, id_ As Integer, dateOfBirthday_ As Integer, name_ As String)
-        Owner = owner_
-        dateOfBirthday = dateOfBirthday_
-        Name = name_
-        Id = id_
+    Public Sub PetClass(namePet_ As String, idPet_ As Integer, dateOfBirthdayPet_ As Integer, ciPet_ As Integer)
+        NamePet = namePet_
+        DateOfBirthdayPet = dateOfBirthdayPet_
+        CiPet = ciPet_
+        IdPet = idPet_
     End Sub
 
 End Class

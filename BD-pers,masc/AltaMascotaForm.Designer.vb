@@ -34,6 +34,7 @@ Partial Class PetClass
         Me.BtnGuarM = New System.Windows.Forms.Button()
         Me.BtnCanM = New System.Windows.Forms.Button()
         Me.LblMostrar = New System.Windows.Forms.Label()
+        Me.BtnModificar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblMascot
@@ -133,7 +134,7 @@ Partial Class PetClass
         'BtnCanM
         '
         Me.BtnCanM.ForeColor = System.Drawing.Color.Black
-        Me.BtnCanM.Location = New System.Drawing.Point(452, 380)
+        Me.BtnCanM.Location = New System.Drawing.Point(409, 380)
         Me.BtnCanM.Name = "BtnCanM"
         Me.BtnCanM.Size = New System.Drawing.Size(87, 29)
         Me.BtnCanM.TabIndex = 12
@@ -150,11 +151,22 @@ Partial Class PetClass
         Me.LblMostrar.TabIndex = 13
         Me.LblMostrar.Text = "Mostar"
         '
-        'Mascota
+        'BtnModificar
+        '
+        Me.BtnModificar.ForeColor = System.Drawing.Color.Black
+        Me.BtnModificar.Location = New System.Drawing.Point(540, 380)
+        Me.BtnModificar.Name = "BtnModificar"
+        Me.BtnModificar.Size = New System.Drawing.Size(87, 29)
+        Me.BtnModificar.TabIndex = 14
+        Me.BtnModificar.Text = "Modificar"
+        Me.BtnModificar.UseVisualStyleBackColor = True
+        '
+        'PetClass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.LblMostrar)
         Me.Controls.Add(Me.BtnCanM)
         Me.Controls.Add(Me.BtnGuarM)
@@ -167,7 +179,7 @@ Partial Class PetClass
         Me.Controls.Add(Me.LblAño)
         Me.Controls.Add(Me.LblId)
         Me.Controls.Add(Me.LblMascot)
-        Me.Name = "Mascota"
+        Me.Name = "PetClass"
         Me.Text = "Mascota"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -186,4 +198,5 @@ Partial Class PetClass
     Friend WithEvents BtnGuarM As Button
     Friend WithEvents BtnCanM As Button
     Friend WithEvents LblMostrar As Label
+    Friend WithEvents BtnModificar As Button
 End Class

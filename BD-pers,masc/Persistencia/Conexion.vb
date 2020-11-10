@@ -14,9 +14,6 @@
             Throw ex
         End Try
 
-
-
-
         Return conexion
     End Function
 
